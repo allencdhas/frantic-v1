@@ -1,0 +1,26 @@
+.nav {
+  background: rgba(255, 255, 255, 0); /* Adjust the alpha channel for transparency */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(100px);
+  position: fixed;
+  width: 100%; 
+}
+.navList {
+  list-style: none;
+  display: flex;
+  
+}
+
+.navLink {
+  font-size: large;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin: 0 20px;
+}
+
+.logo{
+  padding: 10px;
+}
