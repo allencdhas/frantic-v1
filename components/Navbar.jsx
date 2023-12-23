@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="flex justify-between bg-white text-black h-[120px] items-center px-[60px]">
       <div className="flex">
         <img
-          src="/franticLogoV2_purpleF.png"
+          src="/next.png"
           alt=""
           height={"50"}
           width={"50"}
