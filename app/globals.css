@@ -2,82 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-.ethpic{
+.ethpic {
   animation: scaleUpDown 3s infinite;
   z-index: 1;
 }
 
-.joystick{
+.joystick {
   animation: goUpDown 5s infinite;
   z-index: 2;
 }
 
 @keyframes scaleUpDown {
-  0%{
+  0% {
     scale: 1;
   }
-  
-  50%{
+
+  50% {
     scale: 1.5;
   }
 
-  100%{
+  100% {
     scale: 1;
   }
 }
 
 @keyframes goUpDown {
-  0%{
+  0% {
     transform: translateY(10px);
   }
-  
-  50%{
+
+  50% {
     transform: translateY(0px);
   }
 
-  100%{
+  100% {
     transform: translateY(10px);
   }
 }
 
-
 .circles {
-  height:  90vmin;
+  height: 90vmin;
   position: absolute;
   z-index: 0;
   width: 90vmin;
-  
+
   > div {
     animation: growAndFade 3s infinite ease-out;
     background-color: rgb(168, 85, 247);
-    border-radius: 50% ;
+    border-radius: 50%;
     height: 100%;
     opacity: 0;
     position: absolute;
     width: 100%;
   }
-  
   .circle1 {
-    animation-delay: 1s;    
+    animation-delay: 1s;
   }
   .circle2 {
-    animation-delay: 2s; 
+    animation-delay: 2s;
   }
   .circle3 {
     animation-delay: 3s;
   }
 }
 
+
+
+
 @keyframes growAndFade {
   0% {
-    opacity: .25;
+    opacity: 0.25;
     transform: scale(0);
   }
   100% {

@@ -1,15 +1,18 @@
 import React from "react";
 import ServiceCard from "@/components/ServiceCard";
+import Marquee from "react-fast-marquee";
+import Sponsers from "@/components/Sponsers";
+
 const page = () => {
   return (
-    <div className="px-24">
-      <div className="h-[90vh]">
+    <div className="px-24 pt-[120px]">
+      <div className="h-[65vh]">
         <div className="flex justify-center gap-[180px]  mt-[0px]  items-center">
           <div className="flex flex-col ">
             <p className="text-[50px] font-bold w-[600px] ">
-              All web3 game news at your fingertips. 
+              All web3 game news at your fingertips.
             </p>
-            
+
             <p className="text-[16px] mt-5 mb-10 font-light  w-[600px] tracking-wide">
               A <span className="text-purple-600 font-semibold">NewsHub</span>{" "}
               to gain knowledge about the games developed in decentralized
@@ -46,10 +49,40 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  mt-[0px] mb-32">
-        <p className="text-[40px] font-bold mb-5"> Services</p>
-        <div className="grid px-5">
-          <ServiceCard />
+      <div>
+        <Sponsers />
+      </div>
+
+      <div className="flex flex-col  mt-[0px] mb-32 h-[80vh] pt-[12vh]">
+        <p className="text-[50px] font-bold text-center mb-5">
+          Unleash Your Knowledge on Web3 Gaming
+        </p>
+        <div className="flex justify-center">
+          <p className="text-xl text-center font-light mb-[80px] w-[60vw]">
+            Frantic brings you exclusive features to dive deep into the world of
+            decentralized gaming. Explore, learn, and stay ahead of the curve
+            with our comprehensive coverage.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-10 px-5">
+          <ServiceCard
+            title="Global Insights"
+            desc="Get a worldwide perspective on decentralized gaming developments."
+          />
+          <ServiceCard
+            title="Deep Dive Articles"
+            desc="In-depth articles covering every aspect of web3 gaming."
+          />
+
+          <ServiceCard
+            title="Exclusive Interviews"
+            desc="Hear from industry leaders and innovators shaping the future of gaming."
+          />
+          <ServiceCard
+            title="Community Hub"
+            desc="Connect with like-minded enthusiasts in our vibrant community."
+          />
         </div>
       </div>
     </div>
