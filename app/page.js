@@ -9,8 +9,8 @@ const page = () => {
       <div className="h-[65vh]">
         <div className="flex justify-center gap-[180px]  mt-[0px]  items-center">
           <div className="flex flex-col ">
-            <p className="text-[50px] font-bold w-[600px] ">
-              All web3 game news at your fingertips.
+            <p className="text-[50px] font-bold w-[650px] ">
+              One stop destination for everything Web3 gaming.
             </p>
 
             <p className="text-[16px] mt-5 mb-10 font-light  w-[600px] tracking-wide">

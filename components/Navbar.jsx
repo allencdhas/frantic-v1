@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between  text-black h-[120px] items-center px-[60px] fixed w-full">
-      <div className="flex ">
+    <div className="flex justify-between bg-white text-black h-[120px] items-center px-[60px]">
+      <div className="flex">
         <img src="/franticLogoV2.png" alt="" height={"50"} width={"50"} />
         <p className=" tracking-widest font-bold text-1xl ml-2 italic ">
           FRANTIC
@@ -32,6 +32,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
